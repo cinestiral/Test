@@ -1,0 +1,19 @@
+sudo su
+yum update -y
+yum install mysql-server
+chkconfig mysqld on
+service mysqd start
+mysql -u root -p
+mysql -u root -pyourpassword
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY ‘test’;
+
+cp -i C:\Users\goget\Downloads\testkey.pem users.jar ec2-user@ec2-13-234-205-17.ap-south-1.compute.amazonaws.com:~/
+
+nohup java -jar users.jar > users-app.log 2>&1 &
+
+
+
+mysql -u root -ptest "GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY ‘test’;"
+cp -i C:\Users\goget\Downloads\testkey.pem users.jar ec2-user@ec2-13-234-205-17.ap-south-1.compute.amazonaws.com:~/
+
+cinesitral@gmail.com
